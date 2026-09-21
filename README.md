@@ -7,13 +7,15 @@ Practicar con IntelliJ y establecer un flujo de trabajo básico con Git.
 Abre el proyecto en IntelliJ y ejecuta la clase Main.
 
 # JDK y Dependencias
-Version 23.0.2
+Version 23.0.2.
+
 Ninguna dependencia utilizada
 
 # Estructura de la entrega y clases principales
-- Paquete: software.ulpgc
+- Paquete: software.ulpgc.kata1
 - Person: Clase con atributos y cálculo de la edad.
-- Main: Crea a la persona y muestra el resultado por consola.
+- Student: Clase con atributos y calcula el año de matriculacion.
+- Main: Crea una persona y un estudiante y muestra el resultado por consola.
 
 # Git
 Desarrollo en la rama develop, integración en main y subida a GitHub.
