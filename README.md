@@ -1,29 +1,36 @@
 # Kata 1 - IntelliJ IDEA
 
-# Objetivo
-Practicar con IntelliJ y establecer un flujo de trabajo básico con Git.
+## Objetivo
+Practicar con IntelliJ IDEA y establecer un flujo de trabajo básico con Git.
 
-# Ejecución
-Abre el proyecto en IntelliJ y ejecuta la clase Main.
+## Cómo compilar y ejecutar
 
-# JDK y Dependencias
-Version 23.0.2.
+```bash
+mvn compile
+```
 
-Ninguna dependencia utilizada
+Ejecutar desde la clase Main.
 
-# Estructura de la entrega y clases principales
-- Paquete: software.ulpgc.kata1
-- Person: Clase con atributos y cálculo de la edad.
-- Student: Clase con atributos y calcula el año de matriculacion.
-- Main: Crea una persona y un estudiante y muestra el resultado por consola.
 
-# Git
+## JDK y Dependencias
+- **JDK**: 23
+- **Build**: Maven
+- Sin dependencias externas
+
+## Estructura de la entrega y clases principales
+- Paquete: `software.ulpgc.kata1`
+- `Person`: Clase con nombre y fecha de nacimiento. Calcula la edad a partir de la fecha actual.
+- `Student`: Clase con nombre y año de matriculación. Calcula los años matriculado.
+- `Main`: Crea una persona y un estudiante y muestra el resultado por consola.
+
+## Git
 Desarrollo en la rama develop, integración en main y subida a GitHub.
 
-# Verificación
+## Verificación
 El código compila correctamente al clonar el repositorio en una carpeta limpia.
 
-# Repeticiones
+## Repeticiones
 Ejercicio repetido 3 veces en sesiones distintas para asimilar los atajos del teclado.
 
-# Vídeo
+## Vídeo
+
