@@ -21,7 +21,7 @@ public class Person {
         return birthDate;
     }
 
-    public static final double DAYS_PER_YEAR = 365.25;
+
 
     public int getAge() {
         long days = LocalDate.now().toEpochDay() - getBirthDate().toEpochDay();
