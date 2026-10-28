@@ -27,7 +27,7 @@ public class Person {
         return birthDate;
     }
 
-    public int getAge() {
+    public int calculateAge() {
         long days = LocalDate.now().toEpochDay()
                 - birthDate.toEpochDay();
 
