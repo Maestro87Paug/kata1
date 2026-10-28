@@ -1,13 +1,20 @@
 package software.ulpgc.kata1;
+
 import java.time.LocalDate;
 
-
 public class Person {
-    public static final double DAYS_PER_YEAR = 365.25;
-    private final LocalDate birthDate;
+    private static final double DAYS_PER_YEAR = 365.25;
+
     private final String name;
+    private final LocalDate birthDate;
 
     public Person(String name, LocalDate birthDate) {
+        if (birthDate.isAfter(LocalDate.now())) {
+            throw new IllegalArgumentException(
+                    "La fecha de nacimiento no puede ser futura"
+            );
+        }
+
         this.name = name;
         this.birthDate = birthDate;
     }
@@ -16,15 +23,14 @@ public class Person {
         return name;
     }
 
-
     public LocalDate getBirthDate() {
         return birthDate;
     }
 
+    public int calculateAge() {
+        long days = LocalDate.now().toEpochDay()
+                - birthDate.toEpochDay();
 
-
-    public int getAge() {
-        long days = LocalDate.now().toEpochDay() - getBirthDate().toEpochDay();
-        return (int) (days/ DAYS_PER_YEAR);
+        return (int) (days / DAYS_PER_YEAR);
     }
 }
