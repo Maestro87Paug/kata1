@@ -93,6 +93,8 @@ Añadí una validación para impedir años de matrícula futuros.
 - Shift + F10: Ejecutar.
 - Shift + F6: Renombrar mediante refactorización.
 - Alt + Enter: Mostrar sugerencias y correcciones.
+## Comprobación
+He comprobado que al clonar el proyecto funciona correctamente
 
 ## Verificación
 El proyecto compila con Maven y se ejecuta correctamente con JDK 23.
