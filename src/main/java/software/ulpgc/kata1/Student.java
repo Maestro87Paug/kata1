@@ -7,6 +7,12 @@ public class Student {
     private final int enrollmentYear;
 
     public Student(String name, int enrollmentYear) {
+        if (enrollmentYear > LocalDate.now().getYear()) {
+            throw new IllegalArgumentException(
+                    "El año de matrícula no puede ser futuro"
+            );
+        }
+
         this.name = name;
         this.enrollmentYear = enrollmentYear;
     }

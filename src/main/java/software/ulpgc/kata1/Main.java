@@ -1,18 +1,16 @@
 package software.ulpgc.kata1;
 
-import java.time.LocalDate;
-
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person(
-                "Luis",
-                LocalDate.of(1998, 3, 20)
-        );
+        Student student = new Student("Carlos", 2022);
 
-        System.out.println("Nombre: " + person.getName());
-        System.out.println("Nacimiento: " + person.getBirthDate());
+        System.out.println("Estudiante: " + student.getName());
         System.out.println(
-                "Edad aproximada: " + person.calculateAge()
+                "Año de matrícula: " + student.getEnrollmentYear()
+        );
+        System.out.println(
+                "Años matriculado: "
+                        + student.calculateYearsEnrolled()
         );
     }
 }
