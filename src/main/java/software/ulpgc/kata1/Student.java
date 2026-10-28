@@ -3,8 +3,8 @@ package software.ulpgc.kata1;
 import java.time.LocalDate;
 
 public class Student {
-    private String name;
-    private int enrollmentYear;
+    private final String name;
+    private final int enrollmentYear;
 
     public Student(String name, int enrollmentYear) {
         this.name = name;
